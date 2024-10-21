@@ -1,0 +1,10 @@
+version: "3"
+
+services:
+  terraformer:
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    volumes:
+      - ./terraformer:/app/terraform
+    env_file: .env
